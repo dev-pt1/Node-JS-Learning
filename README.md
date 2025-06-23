@@ -16,3 +16,8 @@ Node JS Learning
 
    Command Line Interface file manger with fs module
    can performe operation like list, change directory, make directory, create, delete, read, write, append, rename, move, copy and current directory
+
+4. Events & Streams
+  
+   Events : Events are actions that trigger functions
+   Streams : Streams are continuous flows of data that can be read or written piece by piece.
