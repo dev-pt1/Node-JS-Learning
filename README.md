@@ -35,5 +35,5 @@ Node JS Learning
 
 7. CLI Note Taking :
 
-   Command Line Interface Note Taking with fs module
+   Command Line Interface Note Taking with fs module   
    can performe operation like create, list, read, remove, update
