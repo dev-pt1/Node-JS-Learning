@@ -15,7 +15,7 @@ module.exports = function rm(currentDir, fileName) {
 
         //fs.unlink only delete file, not folder
 
-        // fs.unlink("notes.txt", err => {
+        // fs.unlink(filePath, err => {
         //     if (err) throw err;
         //     console.log("File deleted!");
         // });
