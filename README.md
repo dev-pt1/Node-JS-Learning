@@ -47,4 +47,9 @@ Node JS Learning
 
    Routing : Routing in Express.js defines how the server responds to different HTTP requests (GET, POST, etc.) made to specific URL paths.   
    Middleware: Middleware in Express.js is a function that runs before the final route handler to process requests, such as logging, authentication, or modifying data.
+
+10. REST API
+
+   REST stands for Representational State Transfer.   
+   A REST API is a way to communicate between client and server using HTTP methods to perform CRUD operations on resources.
    
