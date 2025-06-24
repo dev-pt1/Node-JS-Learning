@@ -51,9 +51,9 @@ rl.on("line", async (line) => {
             case "copy":
                 await require("./commands/copy")(currentDir, args[0], args[1]);
                 break;
-                case "copyStream":
-    await require("./commands/copyStream")(currentDir, args[0], args[1]);
-    break;
+            case "copyStream":
+                await require("./commands/copyStream")(currentDir, args[0], args[1]);
+                break;
             case "currentDir":
                 console.log(currentDir);
                 break;
