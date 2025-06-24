@@ -42,4 +42,9 @@ Node JS Learning
 
    Express.js is a minimal and flexible Node.js web application framework that provides robust tools for building web servers and APIs.   
    set up server, basic routes
+
+9. Routing & Middleware :
+
+   Routing : Routing in Express.js defines how the server responds to different HTTP requests (GET, POST, etc.) made to specific URL paths.   
+   Middleware: Middleware in Express.js is a function that runs before the final route handler to process requests, such as logging, authentication, or modifying data.
    
