@@ -25,3 +25,10 @@ Node JS Learning
 5. HTTP Module & Basic Server
 
    HTTP Module : HTTP module in Node.js is a built-in library used to create web servers that handle requests and send responses.
+
+6. NPM & External Packages
+
+   NPM (Node Package Manager) is the default tool that comes with Node.js.
+   External packages are prebuilt modules published by others (or you!) to solve common problems.
+   dependencies : Packages your app needs to run (even in production).
+   devDependencies : Packages used only during development, like testing, linting, etc.
