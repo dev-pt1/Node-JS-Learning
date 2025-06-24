@@ -21,3 +21,7 @@ Node JS Learning
   
    Events : Events are actions that trigger functions
    Streams : Streams are continuous flows of data that can be read or written piece by piece.
+
+5. HTTP Module & Basic Server
+
+   HTTP Module : HTTP module in Node.js is a built-in library used to create web servers that handle requests and send responses.
