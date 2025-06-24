@@ -52,4 +52,3 @@ Node JS Learning
     
    REST stands for Representational State Transfer.   
    A REST API is a way to communicate between client and server using HTTP methods to perform CRUD operations on resources.
-   
