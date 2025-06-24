@@ -12,7 +12,7 @@ Node JS Learning
                        (b). non- global module -> need to import   
    custom modules -> user created custom modules, need to export and import
 
-3. CLI file manager :
+3. CLI File Manager :
 
    Command Line Interface file manger with fs module   
    can performe operation like list, change directory, make directory, create, delete, read, write, append, rename, move, copy and current directory
@@ -32,3 +32,8 @@ Node JS Learning
    External packages are prebuilt modules published by others (or you!) to solve common problems.   
    dependencies : Packages your app needs to run (even in production).   
    devDependencies : Packages used only during development, like testing, linting, etc.   
+
+7. CLI Note Taking :
+
+   Command Line Interface Note Taking with fs module
+   can performe operation like create, list, read, remove, update
