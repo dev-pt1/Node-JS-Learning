@@ -35,31 +35,28 @@ app.post("/api/addUser", (req, res) => {
     })
 })
 
-// PUT - Replace a user completely
 app.put("/api/updateFullUser/:id", (req, res) => {
     const id = parseInt(req.params.id);
     const index = users.findIndex(u => u.id === id);
     if (index === -1) return res.status(404).json({ status: "error", message: "User not found" });
 
-    users[index] = { id, ...req.body }; // Replace entire user
+    users[index] = { id, ...req.body };
     fs.writeFile("./MOCK_DATA.json", JSON.stringify(users, null, 2), err => {
         return res.json({ status: "updated", user: users[index] });
     });
 });
 
-// PATCH - Update part of a user
 app.patch("/api/updatePartOfUser/:id", (req, res) => {
     const id = parseInt(req.params.id);
     const index = users.findIndex(u => u.id === id);
     if (index === -1) return res.status(404).json({ status: "error", message: "User not found" });
 
-    users[index] = { ...users[index], ...req.body }; // Merge changes
+    users[index] = { ...users[index], ...req.body };
     fs.writeFile("./MOCK_DATA.json", JSON.stringify(users, null, 2), err => {
         return res.json({ status: "patched", user: users[index] });
     });
 });
 
-// DELETE - Remove a user
 app.delete("/api/deleteUser/:id", (req, res) => {
     const id = parseInt(req.params.id);
     const index = users.findIndex(u => u.id === id);
