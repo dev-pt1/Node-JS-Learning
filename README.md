@@ -52,3 +52,8 @@ Node JS Learning
     
    REST stands for Representational State Transfer.   
    A REST API is a way to communicate between client and server using HTTP methods to perform CRUD operations on resources.
+
+11. promises & async/await :
+
+   promises: A Promise is an object that represents a value that may be available now, later, or never, used to handle asynchronous operations.   
+   async/await: async/await is a cleaner way to write asynchronous code that waits for Promises to resolve without using .then() or .catch().   
