@@ -21,7 +21,7 @@ app.get("/api/users", (req, res) => {
 })
 
 app.get("/api/user/:id", (req, res) => {
-    const id = Number(req.params.id)
+    const id = parseInt(req.params.id)
     const user = users.find((user) => user.id === id)
     return res.json(user)
 })
@@ -29,6 +29,9 @@ app.get("/api/user/:id", (req, res) => {
 app.post("/api/addUser", (req, res) => {
     const user = req.body;
     const id = users.length + 1;
+    if (!body || !body.first_name || !body.last_name || !body.email || !body.gender || !body.job_title) {
+        return res.status(400).json({ msg: "All fields are require" })
+    }
     users.push({ id, ...user })
     fs.writeFile("./MOCK_DATA.json", JSON.stringify(users, null, 2), (err, data) => {
         return res.json({ status: "success", id })
@@ -39,6 +42,10 @@ app.put("/api/updateFullUser/:id", (req, res) => {
     const id = parseInt(req.params.id);
     const index = users.findIndex(u => u.id === id);
     if (index === -1) return res.status(404).json({ status: "error", message: "User not found" });
+
+    if (!body || !body.first_name || !body.last_name || !body.email || !body.gender || !body.job_title) {
+        return res.status(400).json({ msg: "All fields are require" })
+    }
 
     users[index] = { id, ...req.body };
     fs.writeFile("./MOCK_DATA.json", JSON.stringify(users, null, 2), err => {
